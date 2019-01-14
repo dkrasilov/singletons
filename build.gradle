@@ -8,10 +8,10 @@
 
 plugins {
     // Apply the java plugin to add support for Java
-    java
+    id 'java'
 
     // Apply the application plugin to add support for building an application
-    application
+    id 'application'
 }
 
 repositories {
@@ -30,5 +30,5 @@ dependencies {
 
 application {
     // Define the main class for the application
-    mainClassName = "singletons.App"
+    mainClassName = "com.atlhnm.Main"
 }
