@@ -1,4 +1,4 @@
-package com.atlhnm.singleton;
+package main.java.com.atlhnm.singleton;
 
 public enum Perfect {
     INSTANCE;

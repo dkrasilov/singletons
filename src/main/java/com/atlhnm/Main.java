@@ -1,6 +1,6 @@
-package com.atlhnm;
+package main.java.com.atlhnm;
 
-import com.atlhnm.singleton.Perfect;
+import main.java.com.atlhnm.singleton.Perfect;
 
 public class Main {
 
