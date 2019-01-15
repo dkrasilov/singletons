@@ -1,11 +1,8 @@
 package com.atlhnm.singleton;
 
-import java.util.function.Supplier;
-
-public class Lv7NegroTest extends AbstractSingletonTest {
-
+public class Lv7NegroTest implements SimpleSingletonTest, ConcurrentSingletonTest {
     @Override
-    public Supplier<Object> getSingletonProvider() {
-        return Lv7Negro::getInstance;
+    public Class<?> singletonClass() {
+        return Lv7Negro.class;
     }
 }

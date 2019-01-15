@@ -1,11 +1,8 @@
 package com.atlhnm.singleton;
 
-import java.util.function.Supplier;
-
-public class Lv5GangsterTest extends AbstractSingletonTest {
-
+public class Lv5GangsterTest implements SimpleSingletonTest, ConcurrentSingletonTest {
     @Override
-    public Supplier<Object> getSingletonProvider() {
-        return Lv5Gangster::getInstance;
+    public Class<?> singletonClass() {
+        return Lv5Gangster.class;
     }
 }

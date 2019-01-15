@@ -4,6 +4,13 @@ public class Lv7Negro {
     private static volatile Lv7Negro INSTANCE = null;
 
     private Lv7Negro() {
+        try {
+            System.out.println("Long lasting construction of Lv7Negro...");
+            Thread.sleep(1000L);
+        } catch (InterruptedException e) {
+            System.out.println("meh");
+        }
+
         if (INSTANCE != null)
             throw new IllegalStateException("Am i joke for you?");
     }

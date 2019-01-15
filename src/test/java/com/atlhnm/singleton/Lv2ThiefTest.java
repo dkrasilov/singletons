@@ -1,11 +1,9 @@
 package com.atlhnm.singleton;
 
-import java.util.function.Supplier;
-
-public class Lv2ThiefTest extends AbstractSingletonTest {
+public class Lv2ThiefTest implements SimpleSingletonTest, ConcurrentSingletonTest {
 
     @Override
-    public Supplier<Object> getSingletonProvider() {
-        return Lv2Thief::getInstance;
+    public Class<?> singletonClass() {
+        return Lv2Thief.class;
     }
 }

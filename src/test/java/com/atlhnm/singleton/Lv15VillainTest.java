@@ -1,11 +1,8 @@
 package com.atlhnm.singleton;
 
-import java.util.function.Supplier;
-
-public class Lv15VillainTest extends AbstractSingletonTest {
-
+public class Lv15VillainTest implements SimpleSingletonTest, ConcurrentSingletonTest {
     @Override
-    public Supplier<Object> getSingletonProvider() {
-        return Lv15Villain::getInstance;
+    public Class<?> singletonClass() {
+        return Lv15Villain.class;
     }
 }
